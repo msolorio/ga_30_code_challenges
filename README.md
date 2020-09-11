@@ -1,6 +1,6 @@
 <img src="https://i.imgur.com/2y0Lyzy.png" height="50">
 
-# SEI Daily Code Challenges
+# JavaScript Code Challenges
 
 ## Set Up
 
