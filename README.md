@@ -2,20 +2,6 @@
 
 # SEI Daily Code Challenges
 
-## Intro
-
-During your 12 weeks in SEI, your instructors will be helping you learn tons of coding knowledge and skills using a proven approach where each lesson typically includes a mixture of:
-
-- Instructor lecture & demonstration
-- Instructor/student code alongs
-- In-lesson student exercises
-- Lab time
-
-However, true learning doesn't take place until students practice what they've been taught. In fact, it's not uncommon for students to take 7 to 10 days of applying a particular concept before they are truly "comfortable" with it.
-
-To provide practice in class, many lessons are followed with post-lesson labs. And of course, there's project week, where students often feel they learn the most.
-
-
 ## Set Up
 
 1. Fork this repo into your GHE account by clicking the **[Fork]** button in the top-right of the page.
