@@ -15,11 +15,6 @@ However, true learning doesn't take place until students practice what they've b
 
 To provide practice in class, many lessons are followed with post-lesson labs. And of course, there's project week, where students often feel they learn the most.
 
-To provide additional practice writing JavaScript functions to solve a specific task, you will be required to complete one code challenge per day during weeks: 1, 2, 4, 5, 7 & 8. Totaling 30 challenges.
-
-These code challenges are considered deliverables, and thus 80% of them must be completed in combination with other deliverable homework/assignments in order to receive a Certificate of Completion.
-
-You may choose to do more than one per day, or none at all - just don't fall too far behind!
 
 ## Set Up
 
