@@ -59,6 +59,9 @@ addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
 function addTwoNumbers(a, b) {
+  if (typeof a !== 'number') return NaN;
+  if (typeof b !== 'number') return NaN;
+
   return a + b;
 }
 
@@ -128,7 +131,7 @@ computeRemainder(4,0) //=> Infinity
 computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------*/
 // Your solution for 05-computeRemainder:
-function computeRemaider(a, b) {
+function computeRemainder(a, b) {
   if (b === 0) return Infinity;
 
   return a % b;
@@ -156,7 +159,7 @@ range(5,2) //=> "First argument must be less than second"
 -----------------------------------------------------------------*/
 // Your solution for 06-range here:
 function range(a, b) {
-  if (a >= b) return 'First argument must be less than second.';
+  if (a > b) return 'First argument must be less than second';
 
   const result = [];
   for (let i = a; i < b; i++) result.push(i);
