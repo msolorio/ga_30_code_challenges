@@ -351,10 +351,19 @@ mumble('121'); //=> '1-22-111'
 mumble('!A 2'); //=> '!-AA-   -2222'
 -----------------------------------------------------------------*/
 // Your solution for 13-mumble here:
+function getConvertedChar(char, numOfReapets) {
+  return new Array(numOfReapets).fill(char).join('');
+}
 
+function mumble(string) {
+  const charsArray = string.split('');
 
+  const convertedArray = charsArray.map((char, index) => {
+    return getConvertedChar(char, index + 1);
+  });
 
-
+  return convertedArray.join('-');
+}
 
 /*-----------------------------------------------------------------
 Challenge: 14-fromPairs
@@ -365,18 +374,24 @@ Prompt:
 
 - Write a function named fromPairs that creates an object from an array containing nested arrays.
 - Each nested array will have two elements representing key/value pairs used to create key/value pairs in an object to be returned by the function.
-- If a key appears in multiple pairs, the rightmost pair should overwrite previous the previous entry in the object.
+- If a key appears in multiple pairs, the rightmost pair should overwrite the previous entry in the object.
 
 Examples:
 
 fromPairs([ ['a', 1], ['b', 2], ['c', 3] ]) //=> { a: 1, b: 2, c: 3 }
-fromPairs([ ['name', 'Sam"], ['age', 24], ['name', 'Sally'] ]) //=> { name: "Sally", age: 24 }
+fromPairs([ ['name', 'Sam'], ['age', 24], ['name', 'Sally'] ]) //=> { name: "Sally", age: 24 }
 -----------------------------------------------------------------*/
 // Your solution for 14-fromPairs here:
+function fromPairs(pairsArray) {
+  if (!Array.isArray(pairsArray)) {
+    console.error('first parameter must be an Array');
+  }
 
-
-
-
+  return pairsArray.reduce((resultObj, pair) => {
+    resultObj[pair[0]] = pair[1];
+    return resultObj;
+  }, {});
+}
 
 /*-----------------------------------------------------------------
 Challenge: 15-mergeObjects
